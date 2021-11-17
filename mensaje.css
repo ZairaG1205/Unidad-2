@@ -1,0 +1,40 @@
+:root{
+    --color-main: rgba(33, 23, 82);
+    --color-secondary: rgba(20, 209, 143);
+    --color-placeholder-main: #D3CCE3;
+    --color-placeholder-secondary: #E9E4F0;
+    --color-white: #fff;
+    --color-gradient: linear-gradient( 91.7deg, rgba(50,25,79,0.75) -4.3%, rgba(33, 23, 82,0.75) 101.8% );
+    --font-main: 'Comfortaa', cursive;
+    --font-secondary: 'Roboto', sans-serif;
+}
+*{
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo{
+    background-image: no-repeat;
+    background-size: 100% 300%;
+}
+.contenedor{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+}
+#mesaje{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+#mensaje> *{
+    width:100%;
+}
+.grupo{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}

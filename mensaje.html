@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptar</title>
+    <link rel="stylesheet" href="mensaje.css">
+    <link rel="icon" href="https://images.vexels.com/media/users/3/142874/isolated/lists/7db99d46d3568fe5b985e529b133cddb-icono-de-lupa-de-ojo.png">
+</head>
+<body class="fondo" style="background: burlywood;">
+<header>
+    <h1 style="color: white;"><i>Encriptar</i></h1>
+</header> 
+    <main>
+        <section class="contenedor">
+            <div id="mensaje">
+                <label for="mensaje" style="color:white">Mensaje secreto</label>
+                <textarea id="msj" name="msj" maxlength="300" placeholder="Escribe tu mensaje aquí"></textarea>
+                <span id="cantidad" style="color: white;">0/35</span>
+                <label for="obtener" style="color: white;">Clave secreta</label>
+                <input id="obtener" type="number" min="0" max="30" placeholder="Ingresa tu clave secreta" name="obtener">
+                <div class="grupo">
+                    <button id="cipher" name="cipher" type="button">
+                        <i class="lock"></i> Cifrar
+                      </button>
+                      <button id="decipher" name="decipher" type="button">
+                        <i class="lock-open"></i> Descifrar
+                      </button>
+                </div>
+            </div>
+        </section>
+        <section class="modalcontenedor - contenedorclose">
+            <div id="mensajeresultado" class="modal - modalclose">
+                <p id="close">
+                    <i class="time">
+                        
+                    </i>
+                </p>
+                <label for="mensajeresultado" id="resultado" style="color: white;">Su mensaje cifrado es</label>
+                <textarea id="mensajeresultado" name="textarea" readonly></textarea>
+                <button id="copy" name="copy" type="button">
+                <i class="copiar"></i>"Copiar"
+                </button>
+            </div>
+        </section>
+    </main>
+<footer>
+    <p>⊘ El contenido cuenta con cifrado</p>
+</footer>
+<script src="encriptar.js" type="module"></script>
+</body>
+</html>
